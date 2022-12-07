@@ -1,0 +1,75 @@
+body{
+    font-family: 'Lato', sans-serif;
+    width: 95%;
+    height: 95%;
+    border: solid black 10px;
+    display: inline-block
+ 
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+.NewGame {
+    display: inline-flex;
+}
+
+h2 p{
+    text-align: center;
+  
+}
+
+.player1, .player2 {
+    height: 300px;
+    width: 300px;
+    border: solid black;
+    font-size: 50px;
+}
+
+.player1{
+    float: left;
+    margin-left: 15%;
+}
+
+.player2 {
+    float: right;
+    margin-right: 15%;   
+}
+
+.current1, .current2 {
+    height: 150px;
+    width: 150px;
+    border: solid black;
+    background-color: red;
+    clear: right;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.current1 {
+    float: left;
+    margin-left: 20%;
+
+}
+
+.current2 {
+    float: right;
+    margin-right: 20%;
+   
+}
+
+.dive {
+    clear: left;
+    text-align: center;
+    font-weight: bold;
+}
+
+.stop {
+    padding-top: 30px;
+    display: inline-block;
+    padding-bottom: 30px;
+}
