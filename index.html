@@ -5,63 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>
-            <canvas height="60px" width="60px" id="canvas">
-            impossible d'afficher l'image
-            </canvas>
-            <p class="NewGame">
-            NEW GAME
-            </p>
-        </h1>
-    </header>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.js" rel="stylesheet">
+        <title>Jeu de dés</title>
+    </head>
 
-    <main>
-        <h2>
-            <p class="player1">
-                PLAYER 1
-            </p>
-        </h2>
-        <h2>
-            <p class="player2">
-                PLAYER 2
-            </p>
-        </h2>
-       
-            <div class="current1">
-                <p class="CurrentP1">
-                Score Total
-                </p>
-            </div>    
-            <div class="current2">
-            <p class="CurrentP2">
-                Score Total
-            </p>
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
             </div>
-
-            <p class="dive">
-                Lancer les dés
-                <br>
-                <span class="stop">Stop</span>
-            </p>
-       
-    </main>
-    
-  
-
-
-
-
-
-
-
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>Nouvelle partie</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Lancer les dés</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Stop</button>
+            
+            <img src="dice-5.png" alt="Dice" class="dice">
+        </div>
+        
 
     <script src="indx.js"></script>
 </body>
